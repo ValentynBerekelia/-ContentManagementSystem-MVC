@@ -1,0 +1,11 @@
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\bin\Debug\net9.0\ContentManagementSystem.Test.deps.json
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\bin\Debug\net9.0\ContentManagementSystem.Test.dll
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\bin\Debug\net9.0\ContentManagementSystem.Test.pdb
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.AssemblyInfoInputs.cache
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.AssemblyInfo.cs
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.csproj.CoreCompileInputs.cache
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.dll
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\refint\ContentManagementSystem.Test.dll
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ContentManagementSystem.Test.pdb
+D:\VisualCode\ContentManagementSystem\ContentManagementSystem.Test\obj\Debug\net9.0\ref\ContentManagementSystem.Test.dll
