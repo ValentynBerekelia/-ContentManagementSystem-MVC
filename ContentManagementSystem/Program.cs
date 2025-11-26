@@ -13,7 +13,7 @@ var connectionString = builder.Configuration.GetConnectionString("ApplicationDbC
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Database=contentdb;Username=postgres;Password=1634532h"));
+    options.UseNpgsql("Host=localhost;Port=5432;Database=contentdb;Username=postgres;Password=*******"));
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
