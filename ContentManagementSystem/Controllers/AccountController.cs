@@ -33,7 +33,7 @@ namespace ContentManagementSystem.Controllers
                     return View(model);
                 }
                 _context.Users.Add(model);
-                _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
 
                 await Authenticate(model.Email);

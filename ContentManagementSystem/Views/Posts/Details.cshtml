@@ -1,0 +1,63 @@
+﻿@model ContentManagementSystem.Models.User.Post
+
+@{
+    ViewData["Title"] = "Деталі поста";
+}
+
+<div>
+    <h1>@Html.DisplayFor(model => model.Title)</h1>
+    <hr />
+
+    <div class="mb-4">
+        <p class="text-muted">Автор: @Model.User?.Name</p>
+        <div class="post-content">
+            @Html.DisplayFor(model => model.Text)
+        </div>
+    </div>
+</div>
+
+<div class="my-4 p-3 bg-light rounded">
+    <h5>Додати коментар:</h5>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form asp-action="AddComment" method="post">
+            <input type="hidden" name="postId" value="@Model.PostId" />
+
+            <div class="form-group mb-2">
+                <textarea name="text" class="form-control" rows="3" placeholder="Ваш коментар..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm">Надіслати</button>
+        </form>
+    }
+    else
+    {
+        <div class="alert alert-warning py-2">
+            <small>Будь ласка, увійдіть у систему, щоб залишити коментар.</small>
+        </div>
+    }
+</div>
+<div class="mt-5">
+    <h4>Коментарі</h4>
+    <hr />
+    @if (Model.Coments != null && Model.Coments.Any())
+    {
+        <ul class="list-group list-group-flush">
+            @foreach (var comment in Model.Coments)
+            {
+                <li class="list-group-item">
+                    <p>@comment.Text</p>
+                    <small class="text-muted">Автор: @(comment.User?.Name ?? "Невідомий") (ID: @comment.UserId)</small>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p class="text-muted">Коментарів поки немає.</p>
+    }
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Назад до списку</a>
+</div>

@@ -1,7 +1,6 @@
 using ContentManagementSystem.Data;
 using ContentManagementSystem.Models.User;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Npgsql;
@@ -23,7 +22,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 builder.Services.AddRazorPages();
-builder.Services.AddControllersWithViews();
 
 
 var app = builder.Build();
@@ -46,7 +44,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Posts}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 
